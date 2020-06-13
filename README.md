@@ -3,6 +3,13 @@
 
 This my own programming language. Lexer, parser and interpreter were written using python.
 
+Example factorial program using boson language is at examples folder.
+
+To run Boson programs download this repo
+-> Then run shell.py file in cmd i.e python shell.py
+-> It will open the boson interpreter then pass the path of boson program to run function to execute boson programs.
+   i.e run("examples\factorial.bs")
+
 Boson has basic functionalities like,
   -> Arithmetic operations  (+, -, *, /, %, **(pow))
   -> Relational operations  (<, >, <=, >=, !=, ==)
@@ -131,3 +138,11 @@ Functions :
                    print(sum(1,2), "nl") # which outputs 3
   -> is_func() function returns true if the element passed to it is a function.
 </pre>
+
+Example boson program for finding factorial of a number through iteration and recursion :
+
+![Screenshot](program.png)
+
+Output screenshot :
+
+![Screenshot](output.png)
