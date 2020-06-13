@@ -1,11 +1,14 @@
-assign result = 1
-func fact(n)
-    for i=1 to n+1 then
-        $result = result * i
-    end
-    return result
+func fact_iter(n)
+    assign result = 1
+    for i = 1 to n+1 then $result = result * i
+    return result 
 end
 
+func fact_recur(n) -> if n == 1 then return n else return n * fact_recur(n-1)
+
+print("Enter the number :", " ")
 assign n = input_int()
-print("Factorial of { n } is : ", " ")
-print(fact(n), "nl")
+print("Factorial of { n } through iteration is: ", " ")
+print(fact_iter(n), "nl")
+print("Factorial of { n } through recursion is: ", " ")
+print(fact_recur(n), "nl")
