@@ -1,0 +1,11 @@
+assign result = 1
+func fact(n)
+    for i=1 to n+1 then
+        $result = result * i
+    end
+    return result
+end
+
+assign n = input_int()
+print("Factorial of { n } is : ", " ")
+print(fact(n), "nl")

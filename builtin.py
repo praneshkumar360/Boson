@@ -1,0 +1,23 @@
+from symbol_table import *
+from interpreter import *
+
+global_symbol_table = SymbolTable()
+global_symbol_table.set("null", String.null)
+global_symbol_table.set("true", Number.true)
+global_symbol_table.set("false", Number.false)
+global_symbol_table.set("math_pi", Number.math_pi)
+global_symbol_table.set("print", BuiltInFunction.print)
+global_symbol_table.set("print_r", BuiltInFunction.print_r)
+global_symbol_table.set("input", BuiltInFunction.input)
+global_symbol_table.set("input_int", BuiltInFunction.input_int)
+global_symbol_table.set("clear", BuiltInFunction.clear)
+global_symbol_table.set("cls", BuiltInFunction.clear)
+global_symbol_table.set("is_num", BuiltInFunction.is_num)
+global_symbol_table.set("is_str", BuiltInFunction.is_str)
+global_symbol_table.set("is_list", BuiltInFunction.is_list)
+global_symbol_table.set("is_func", BuiltInFunction.is_func)
+global_symbol_table.set("append", BuiltInFunction.append)
+global_symbol_table.set("pop", BuiltInFunction.pop)
+global_symbol_table.set("extend", BuiltInFunction.extend)
+global_symbol_table.set("len", BuiltInFunction.len)
+global_symbol_table.set("run", BuiltInFunction.run)
