@@ -1,3 +1,4 @@
+<pre>
 # Boson
 
 This my own programming language. Lexer, parser and interpreter were written using python.
@@ -22,20 +23,20 @@ User input :
 
 Print :
 
-  -> print function is used to print the output the console screen.
+  -> print function is used to print the output to the console screen.
   -> print function has 2 parameters which are output and separator.
      For example : print("Hello", " ")
                    print("world", "") # which prints "Hello world"
   -> "nl" used in separator for new line.
      For example : print("Hello", "nl")
-                   print("world", "nl") # which prints "world" in next line followed by "Hello" in previous linne. 
+                   print("world", "nl") # which prints "world" in next line followed by "Hello" in previous line. 
 
 Lists :
 
   -> It supports basic functionalities like add an element, remove element, extend another list etc...
   -> Element of an list can be accessed using index value followed by "@" symbol.
      For example : assign l = [1, 2, 3, 4, 5]
-                   print(l @ 0, "nl") # which returns the value of 0th index value i.e 1.
+	           print(l @ 0, "nl") # which returns the value of 0th index value i.e 1.
   -> Add an element to the list.
      1) Using append function.
         For example : append(l, 6) # which add 6 to the list l.
@@ -129,3 +130,4 @@ Functions :
                    print(sum, "nl") # which outputs <anonymous function>
                    print(sum(1,2), "nl") # which outputs 3
   -> is_func() function returns true if the element passed to it is a function.
+</pre>
